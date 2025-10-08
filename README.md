@@ -54,3 +54,24 @@ int main(){
 
     return 0;
 }
+
+
+
+
+                        TERCEIRO CÓDIGO
+
+#include<stdio.h>
+int main(){
+
+    float x;
+    printf("Digite o valor de x:");
+    scanf("%f",&x);
+
+    if (x > -10 && x <= 30){
+        printf("%2.f Nùmero está no intervalo\n", x);
+    }
+    else{
+        printf("Não está no intervalo");
+    }
+    return 0;
+}
