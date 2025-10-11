@@ -137,3 +137,63 @@ int main(){
 
                         QUINTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    float numero;
+    printf("Digite um número:");
+    scanf("%f",&numero);
+
+    if (numero > 0){
+        printf("%f Valor positivo\n", numero);
+    }
+    else{
+        printf("%f Valor Negativo\n", numero);
+    }
+
+    float numero2;
+    printf("Digite um número:");
+    scanf("%f",&numero2);
+
+    if (numero2 > 0){
+        printf("%f Valor positivo\n", numero2);
+    }
+    else{
+        printf("%f Valor Negativo\n", numero2);
+    }
+
+    float numero3;
+    printf("Digite um número:");
+    scanf("%f",&numero3);
+
+    if (numero3 > 0){
+        printf("%f Valor positivo\n", numero3);
+    }
+    else{
+        printf("%f Valor Negativo\n", numero3);
+    }
+
+    float numero4;
+    printf("Digite um número:");
+    scanf("%f",&numero4);
+
+    if (numero4 > 0){
+        printf("%f Valor positivo\n", numero4);
+    }
+    else{
+        printf("%f Valor Negativo\n", numero4);
+    }
+
+    float numero5;
+    printf("Digite um número:");
+    scanf("%f",&numero5);
+
+    if (numero5 > 0){
+        printf("%f Valor positivo\n", numero5);
+    }
+    else{
+        printf("%f Valor Negativo\n", numero5);
+    }
+
+    return 0;
+}
