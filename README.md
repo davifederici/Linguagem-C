@@ -75,3 +75,59 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+                        QUARTO CÓDIGO
+
+#include<stdio.h>
+int main(){
+    int mes;
+    printf("Digite o número do mês:");
+    scanf("%d",&mes);
+
+    switch(mes){
+        case 1:
+            printf("Mês de Janeiro");
+            break;
+        case 2:
+            printf("Mês de fevereiro");
+            break;
+        case 3:
+            printf("Mês de Março");
+            break;
+        case 4:
+            printf("Mês de Abril");
+            break;
+        case 5:
+            printf("Mês de Maio");
+            break;
+        case 6:
+            printf("Mês de Junho");
+            break;
+        case 7:
+            printf("Mês de JUlho");
+            break;
+        case 8:
+            printf("Mês de Agosto");
+            break;
+        case 9:
+            printf("Mês de Setembro");
+            break;
+        case 10:
+            printf("Mês de Outubro");
+            break;
+        case 11:
+            printf("Mês de Novembro ");
+            break;
+        case 12:
+            printf("Mês de Dezembro");
+            break;
+
+        default:
+        printf("Valor inválido \n");
+        
+    }
+    return 0;
+}
