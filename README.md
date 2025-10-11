@@ -286,3 +286,63 @@ int main(){
 
                         OITAVO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int codigo;
+    float salario, reajuste, novo_salario;
+
+    printf("Digite o código do cargo: ");
+    scanf("%d", &codigo);
+
+    printf("Digite o salário: ");
+    scanf("%f", &salario);
+
+    printf("\n--- Resultado ---\n");
+
+    switch (codigo) {
+        case 101:
+            printf("Cargo: Gerente\n");
+            printf("Salário: %.2f\n", salario);
+            printf("Sem reajuste.\n");
+            break;
+
+        case 102:
+            reajuste = salario * 0.005;
+            novo_salario = salario + reajuste;
+            printf("Cargo: Analista\n");
+            printf("Salário base: %.2f\n", salario);
+            printf("Reajuste: %.2f\n", reajuste);
+            printf("Novo salário: %.2f\n", novo_salario);
+            break;
+
+        case 103:
+            reajuste = salario * 0.015;
+            novo_salario = salario + reajuste;
+            printf("Cargo: Programador\n");
+            printf("Salário base: %.2f\n", salario);
+            printf("Reajuste: %.2f\n", reajuste);
+            printf("Novo salário: %.2f\n", novo_salario);
+            break;
+
+        case 104:
+            reajuste = salario * 0.03;
+            novo_salario = salario + reajuste;
+            printf("Cargo: Designer\n");
+            printf("Salário base: %.2f\n", salario);
+            printf("Reajuste: %.2f\n", reajuste);
+            printf("Novo salário: %.2f\n", novo_salario);
+            break;
+
+        default:
+            reajuste = salario * 0.40;
+            novo_salario = salario + reajuste;
+            printf("Cargo: Desconhecido\n");
+            printf("Salário base: %.2f\n", salario);
+            printf("Reajuste: %.2f\n", reajuste);
+            printf("Novo salário: %.2f\n", novo_salario);
+            break;
+    }
+
+    return 0;
+}
