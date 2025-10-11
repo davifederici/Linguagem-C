@@ -203,3 +203,22 @@ int main(){
 
                         SEXTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int idade;
+    printf("Informe sua idade:");
+    scanf("%d",&idade);
+
+    if (idade > 65){
+        printf("Pessoa idosa\n",idade);
+    }
+    else if (idade > 19){
+        printf("Maior de idade\n", idade);
+    }
+    else {
+        printf("Menor de idade\n",idade);
+    }
+
+    return 0;
+}
