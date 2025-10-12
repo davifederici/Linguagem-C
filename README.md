@@ -397,3 +397,34 @@ int main(){
 
                         DÉCIMO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int a,b,c,area;
+    printf("Escreva o lado A:");
+    scanf("%d",&a);
+
+    printf("Escreva o lado B:");
+    scanf("%d",&b);
+
+    printf("Escreva o lado C:");
+    scanf("%d",&c);
+
+    if (a > 0 && b > 0 && c > 0){
+        if (a == b && a == c && b == c ){
+            printf("O triângulo é equilátero \n");
+        }
+        else if((a == b && a != c) || (a == c && a != b) || (b == c && b != a)){
+            printf("O triângulo é isósceles\n");
+        }
+        else if (a != b && a != c && b != c){
+            printf("O triângulo é escaleno\n");
+        }
+    } else {
+        printf("Não formam triângulo\n");
+    }
+
+
+    return 0;
+
+}
