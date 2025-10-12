@@ -353,3 +353,41 @@ int main() {
 
                         NONO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int a,b,c,area;
+    printf("Escreva o lado A:");
+    scanf("%d",&a);
+
+    printf("Escreva o lado B:");
+    scanf("%d",&b);
+
+    printf("Escreva o lado C:");
+    scanf("%d",&c);
+
+    if (a + b > c){
+         printf("%d e %d Formam um triângulo \n", a, b);
+    }
+    else{
+        printf("Não formam um triângulo \n", c);
+    }
+    if (a + c > b){
+        printf("%d e %d Formam um triângulo \n", a,c);
+    }
+    else {
+        printf("Não formam um triângulo \n", b);
+    }
+    if (b + c > a){
+        printf("%d e %d Formam um triângulo \n", b,c);
+    }
+    else{
+        printf("Não formam um triângulo \n",a);
+    }
+
+    area = (a * (b + c)) / 2;
+    printf("A area é: %d\n", area);
+
+    return 0;
+
+}
