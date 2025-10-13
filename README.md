@@ -486,3 +486,19 @@ int main(){
 
                         DÉCIMO TERCEIRO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    float salario, vendas;
+    printf("Digite o valor das vendas brutas da semana:R$");
+    scanf("%f",&vendas);
+
+    salario = 200 +(vendas*0.09);
+
+    if (vendas > 1000){
+        salario += 800;
+    }
+    printf("O salário total do vendedor será:R$%.2f\n",salario);
+
+    return 0;
+}
