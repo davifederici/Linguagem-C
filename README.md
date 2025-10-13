@@ -459,3 +459,24 @@ int main(){
 
                         DÉCIMO SEGUNDO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    float valor,prestacao;
+    int parcelas;
+    printf("Digite o valor da compra:");
+    scanf("%f", &valor);
+
+    if (valor <= 500){
+        parcelas = 5;
+    }
+    else{
+        parcelas = 8;
+    }
+
+    prestacao=valor/parcelas;
+
+    printf("O valor será parcelado em %d de R$ %2.f cada\n", parcelas, prestacao);
+
+    return 0;
+}
