@@ -545,3 +545,51 @@ int main(){
 
                         DÉCIMO QUINTO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    float p1, p2, media;
+    int faixa;
+
+    printf("Digite a nota da primeira prova: ");
+    scanf("%f", &p1);
+
+    printf("Digite a nota da segunda prova: ");
+    scanf("%f", &p2);
+
+    media = (p1 + p2) / 2;
+
+    faixa = (int) media;
+
+    printf("Média: %.2f\n", media);
+
+    switch (faixa) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            printf("O conceito é D\n");
+            break;
+
+        case 5:
+        case 6:
+            printf("O conceito é C\n");
+            break;
+
+        case 7:
+        case 8:
+            printf("O conceito é B\n");
+            break;
+
+        case 9:
+        case 10:
+            printf("O conceito é A\n");
+            break;
+
+        default:
+            printf("Erro: média fora do intervalo válido (0 a 10)\n");
+    }
+
+    return 0;
+}
