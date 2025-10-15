@@ -509,3 +509,33 @@ int main(){
 
                         DÉCIMO QUARTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    float valor, juros,prazo;
+    printf("Digite o valor da compra?");
+    scanf("%f",&valor);
+
+    printf("Qual seria o prazo de pagamento?");
+    scanf("%f",&prazo);
+
+    if (prazo >= 1 && prazo <= 3){
+        printf("O valor é de %.2f\n", valor);
+    }
+    else if (prazo >= 4 && prazo <= 7){
+        juros = valor + 0.005;
+        printf("O valor do juros é %.2f\n", juros);
+    }
+    else if(prazo >= 8 && prazo <= 12){
+        juros = valor + 0.0015;
+    }
+    else if ( prazo >= 12 && prazo <= 20){
+        juros = valor + 0.03;
+        printf("O valor do juros é %.2f", juros);
+    }
+    else{
+        printf("Prazo inválido!");
+    }
+
+    return 0;
+}
