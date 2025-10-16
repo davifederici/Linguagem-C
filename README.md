@@ -632,3 +632,37 @@ int main() {
 
                         DÉCIMO SÉTIMO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int cpf,numerodp;
+    float renda,imposto,desconto;
+    printf("Digite seu CPF, o número de dependentes e a renda mensal:");
+    scanf("%d %d %f", &cpf,&numerodp,&renda);
+
+    desconto = renda * (numerodp* 0.005);
+
+    if (renda > 7){
+        imposto = renda * 0.020;
+        printf("O valor líquido é %.2f", imposto);
+    }
+    else if (renda > 5) {
+        imposto = renda * 0.015;
+        printf("O valor líquido é %.2f", imposto); 
+    }
+    else if (renda > 3){
+        imposto = renda * 0.010;
+        printf("O valor líquido é %.2f", imposto);
+    }
+    else if (renda > 2){
+        imposto = renda * 0.005;
+        printf("O valor líquido é %.2f", imposto);
+    }
+    else{
+        imposto = renda - 0;
+        printf("O valor líquido é %.2f:", imposto);
+    }
+    
+
+    return 0;
+}
