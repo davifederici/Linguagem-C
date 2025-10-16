@@ -600,3 +600,29 @@ int main() {
 
                         DÉCIMO SEXTO CÓDIGO
 
+#include<stdio.h>
+int fatorial(int n) {
+    int fat = 1;
+    for (int i = 1; i <= n; i++) {
+        fat *= i;
+    }
+    return fat;
+}
+
+int main() {
+    int numero;
+    float f = 1.0;
+
+    printf("Digite um número: ");
+    scanf("%d", &numero);
+
+    if (numero > 1 && numero < 5) {
+        for (int i = 1; i <= numero; i++) {
+            f += 1.0 / fatorial(i);
+        }
+        printf("O valor de F é: %.2f\n", f);
+    } else {
+        printf("Número inválido\n");
+    }
+    return 0;
+}
