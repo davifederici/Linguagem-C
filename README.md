@@ -728,3 +728,30 @@ int main(){
 
 
 
+                        VIGÉSIMO CÓDIGO
+
+#include<stdio.h>
+int main(){
+
+    int a,b,i;
+   
+    printf("Digite o valor de A:");
+    scanf("%d",&a);
+
+    printf("Digite o valor de B:");
+    scanf("%d",&b);
+
+    if (a<=b){
+        printf("Os valores ímpares são:");
+        for(i=a; i<=b; i++){
+            if(i%2==1){
+                printf("%d\n",i);
+            }
+        }
+    }
+        else{
+            printf("Número inválido!");
+        }
+
+    return 0;
+}
