@@ -791,3 +791,23 @@ int main(){
 
 
                         VIGÉSIMO SEGUNDO CÓDIGO
+
+#include<stdio.h>
+int main(){
+
+    int n,n1,i;
+    printf("Digite o valor de N:");
+    scanf("%d",&n);
+
+    if(n > 0)
+        for(i=0;i<=n;i++){
+        printf("Digite o próximo número:");
+        scanf("%d",&n1);
+        printf("O triplo de %d é:%d\n",n1,n1*3);
+    }
+    else{
+        printf("Valor inválido!");
+    }
+
+    return 0;
+}
