@@ -846,3 +846,33 @@ int main(){
 
 
 
+                        VIGÉSIMO QUARTO CÓDIGO
+
+#include <stdio.h>
+
+int main() {
+    int valor, soma = 0, contador = 0;
+    float media;
+
+    printf("Digite valores positivos (um número negativo encerra a leitura):\n");
+
+    while (1) { 
+        scanf("%d", &valor);
+
+        if (valor < 0) { 
+            break;
+        }
+
+        soma += valor;   
+        contador++;      
+    }
+
+    if (contador > 0) { 
+        media = (float)soma / contador;
+        printf("A média dos valores é: %.2f\n", media);
+    } else {
+        printf("Nenhum valor positivo foi digitado.\n");
+    }
+
+    return 0;
+}
