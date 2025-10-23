@@ -817,3 +817,28 @@ int main(){
 
                         VIGÉSIMO TERCEIRO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int n,n1,i,positivo=0,negativo=0;
+    printf("Digite o valor de N:");
+    scanf("%d",&n);
+
+    if(n > 0)
+        for(i=0;i<=n;i++){
+        printf("Digite o próximo número:");
+        scanf("%d",&n1);
+            if(n1>0){
+                positivo++;
+            }
+            else{
+                negativo++;
+            }
+    }
+    else{
+        printf("Valor inválido!");
+    }
+    printf("%d são negativos e %d são positivos",positivo,negativo);
+
+    return 0;
+}
