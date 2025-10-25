@@ -883,3 +883,33 @@ int main() {
 
                         VIGÉSIMO QUINTO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int valor, soma = 0, contador = 0;
+    float media;
+
+    printf("Digite números (0 encerra a leitura):\n");
+
+    while (1) {
+        scanf("%d", &valor);
+
+        if (valor == 0) { // encerra a leitura
+            break;
+        }
+
+        if (valor % 2 == 0) { // verifica se é par
+            soma += valor;
+            contador++;
+        }
+    }
+
+    if (contador > 0) {
+        media = (float)soma / contador;
+        printf("A média dos números pares é: %.2f\n", media);
+    } else {
+        printf("Nenhum número par foi digitado.\n");
+    }
+
+    return 0;
+}
