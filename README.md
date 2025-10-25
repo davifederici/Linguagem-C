@@ -954,3 +954,43 @@ int main() {
 
                         VIGÉSIMO SÉTIMO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int n, i, valor, soma = 0, maior, menor;
+    float media;
+
+    printf("Quantos números deseja digitar? ");
+    scanf("%d", &n);
+
+    if (n < 3) {
+        printf("Erro: é necessário digitar pelo menos 3 números.\n");
+        return 0;
+    }
+
+    printf("Digite %d números inteiros:\n", n);
+    scanf("%d", &valor);
+
+    soma = valor;
+    maior = valor;
+    menor = valor;
+
+    for (i = 1; i < n; i++) {
+        scanf("%d", &valor);
+        soma += valor;
+
+        if (valor > maior)
+            maior = valor;
+
+        if (valor < menor)
+            menor = valor;
+    }
+
+    soma = soma - maior - menor;
+
+    media = (float)soma / (n - 2);
+
+    printf("A média excluindo o maior (%d) e o menor (%d) é: %.2f\n", maior, menor, media);
+
+    return 0;
+}
