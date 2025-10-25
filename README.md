@@ -920,3 +920,28 @@ int main() {
 
                         VIGÉSIMO SEXTO CÓDIGO
             
+#include <stdio.h>
+
+int main() {
+    int i, valor, maior, menor;
+    printf("Digite 50 valores inteiros:\n");
+    scanf("%d", &valor);
+    maior = valor;
+    menor = valor;
+
+    for (i = 1; i < 50; i++) {
+        scanf("%d", &valor);
+
+        if (valor > maior) {
+            maior = valor;
+        }
+        if (valor < menor) {
+            menor = valor;
+        }
+    }
+
+    printf("O maior valor digitado foi: %d\n", maior);
+    printf("O menor valor digitado foi: %d\n", menor);
+
+    return 0;
+}
