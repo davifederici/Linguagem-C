@@ -1051,3 +1051,4 @@ int main() {
 
 
 
+                        TRIGÉSIMO CÓDIGO
