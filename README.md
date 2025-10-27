@@ -1028,3 +1028,20 @@ int main() {
 
                         VIGÉSIMO NONO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int numerador, denominador;
+    float S = 0;
+
+    numerador = 1;
+
+    for (denominador = 1; denominador <= 50; denominador++) {
+        S += (float)numerador / denominador;
+        numerador += 2;
+    }
+
+    printf("O valor de S é: %.2f\n", S);
+
+    return 0;
+}
