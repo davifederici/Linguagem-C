@@ -1001,3 +1001,23 @@ int main() {
 
                         VIGÉSIMO OITAVO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int celsius;         // variável para o valor em Celsius
+    float fahrenheit;    // variável para o valor convertido em Fahrenheit
+
+    printf("Tabela de conversão de Celsius para Fahrenheit\n");
+    printf("-------------------------------------------------\n");
+    printf(" Celsius\tFahrenheit\n");
+    printf("-------------------------------------------------\n");
+
+    for (celsius = -100; celsius <= 100; celsius += 5) {
+        fahrenheit = (9.0 / 5.0) * celsius + 32;  // fórmula de conversão
+        printf(" %7d\t%10.2f\n", celsius, fahrenheit);
+    }
+
+    printf("-------------------------------------------------\n");
+
+    return 0;
+}
