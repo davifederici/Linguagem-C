@@ -1052,3 +1052,23 @@ int main() {
 
 
                         TRIGÉSIMO CÓDIGO
+
+#include <stdio.h>
+#include <math.h> 
+
+int main() {
+    int i, denominador;
+    float s = 0, termo;  
+
+    denominador = 50;
+
+    for (i = 1; i <= 50; i++) {
+        termo = (float)pow(2, i) / denominador;  
+        s += termo;
+        denominador--; 
+    }
+
+    printf("O valor de S é: %.2f\n", s);
+
+    return 0;
+}
