@@ -1130,3 +1130,30 @@ int main() {
 
 
                         TRIGÉSIMO TERCEIRO CÓDIGO
+
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+    float s = 1.0, fatorial;
+
+    printf("Digite um valor inteiro e positivo: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Erro: o número deve ser positivo.\n");
+        return 0;
+    }
+
+    for (i = 1; i <= n; i++) {
+        fatorial = 1;
+        for (j = 1; j <= i; j++) {
+            fatorial *= j;
+        }
+        s += 1.0 / fatorial;
+    }
+
+    printf("O valor de S é: %.6f\n", s);
+
+    return 0;
+}
