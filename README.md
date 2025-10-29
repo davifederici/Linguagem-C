@@ -1104,3 +1104,23 @@ int main() {
 
                         TRIGÉSIMO SEGUNDO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int fatorial = 1;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &n);
+
+    if (n < 0) {
+        printf("Não existe fatorial de número negativo.\n");
+    } else {
+        for (i = 1; i <= n; i++) {
+            fatorial *= i;
+        }
+        printf("O fatorial de %d é: %d\n", n, fatorial);
+    }
+
+    return 0;
+}
