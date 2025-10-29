@@ -1102,3 +1102,5 @@ int main() {
 
 
 
+                        TRIGÉSIMO SEGUNDO CÓDIGO
+
