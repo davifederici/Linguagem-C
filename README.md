@@ -1076,3 +1076,24 @@ int main() {
 
 
 
+                        TRIGÉSIMO PRIMEIRO CÓDIGO
+
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int produto = 1;  // inicializa com 1, pois é o elemento neutro da multiplicação
+
+    printf("Digite um número: ");
+    scanf("%d", &n);
+
+    printf("Números: ");
+    for (i = 1; i <= n; i++) {
+        printf("%d ", i);
+        produto *= i;  // multiplica o produto pelos números de 1 até n
+    }
+
+    printf("\nProduto: %d\n", produto);
+
+    return 0;
+}
