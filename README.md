@@ -1164,3 +1164,50 @@ int main() {
 
                         TRIGÉSIMO QUARTO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    float salario, somaSalario = 0, maiorSalario = 0;
+    int filhos, totalPessoas = 0, somaFilhos = 0, contAte100 = 0;
+    float mediaSalario, mediaFilhos, percentual;
+
+    while (1) {
+        printf("Digite o salário (negativo para encerrar): ");
+        scanf("%f", &salario);
+
+        if (salario < 0) {
+            break; // encerra a leitura
+        }
+
+        printf("Digite o número de filhos: ");
+        scanf("%d", &filhos);
+
+        somaSalario += salario;
+        somaFilhos += filhos;
+        totalPessoas++;
+
+        if (salario > maiorSalario) {
+            maiorSalario = salario;
+        }
+
+        if (salario <= 100) {
+            contAte100++;
+        }
+    }
+
+    if (totalPessoas > 0) {
+        mediaSalario = somaSalario / totalPessoas;
+        mediaFilhos = (float)somaFilhos / totalPessoas;
+        percentual = (float)contAte100 / totalPessoas * 100;
+
+        printf("\n--- RESULTADOS ---\n");
+        printf("a) Média do salário da população: R$ %.2f\n", mediaSalario);
+        printf("b) Média do número de filhos: %.2f\n", mediaFilhos);
+        printf("c) Maior salário: R$ %.2f\n", maiorSalario);
+        printf("d) Percentual de pessoas com salário até R$100,00: %.2f%%\n", percentual);
+    } else {
+        printf("Nenhum dado foi informado.\n");
+    }
+
+    return 0;
+}
