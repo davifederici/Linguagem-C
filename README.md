@@ -1218,3 +1218,45 @@ int main() {
 
                         TRIGÉSIMO QUINTO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int codigo, cont = 0;
+    float preco, novoPreco;
+    float somaPreco = 0, somaNovoPreco = 0;
+
+    printf("Digite o código e o preço de custo (código negativo encerra):\n");
+
+    while (1) {
+        printf("\nCódigo do produto: ");
+        scanf("%d", &codigo);
+
+        if (codigo < 0) {
+            break; // encerra a leitura
+        }
+
+        printf("Preço de custo: R$ ");
+        scanf("%f", &preco);
+
+        novoPreco = preco * 1.20; // aumento de 20%
+
+        printf("Produto %d - Novo preço: R$ %.2f\n", codigo, novoPreco);
+
+        somaPreco += preco;
+        somaNovoPreco += novoPreco;
+        cont++;
+    }
+
+    if (cont > 0) {
+        float mediaPreco = somaPreco / cont;
+        float mediaNovoPreco = somaNovoPreco / cont;
+
+        printf("\n--- RESUMO ---\n");
+        printf("Média dos preços SEM aumento: R$ %.2f\n", mediaPreco);
+        printf("Média dos preços COM aumento: R$ %.2f\n", mediaNovoPreco);
+    } else {
+        printf("\nNenhum produto foi informado.\n");
+    }
+
+    return 0;
+}
