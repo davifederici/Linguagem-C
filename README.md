@@ -1336,3 +1336,22 @@ int main() {
 
                         TRIGÉSIMO OITAVO CÓDIGO
 
+#include <stdio.h>
+int main() {
+
+    int A[10], i;
+
+    printf("\nDigite 10 valores: ");
+    for (i = 0; i < 10; i++) {
+        scanf("%d", &A[i]);
+    }
+
+    printf("\nValores menores ou iguais a 10:\n");
+    for (i = 0; i < 10; i++) {
+        if (A[i] <= 10) {
+            printf("%d ", A[i]);
+        }
+    }
+
+    return 0;
+}
