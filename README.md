@@ -1266,3 +1266,26 @@ int main() {
 
                         TRIGÉSIMO SEXTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int i, vetA[6], neg=0,pos=0;
+
+    printf("Digite 6 valores:\n");
+    for(i=0;i<6;i++){
+        scanf("%d", &vetA[i]);
+    }
+    for(i=0;i<6;i++){
+        if (vetA[i]<0){
+            neg++;
+        }
+        else{
+            pos++;
+        }
+    }
+
+    printf("\nOs valores negativos são:%d", neg);
+    printf("\nOs valores positivos são:%d", pos);
+
+    return 0;
+}
