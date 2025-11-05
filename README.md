@@ -1362,3 +1362,27 @@ int main() {
 
                         TRIGÉSIMO NONO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int N[20],m,p,i;
+
+    printf("Digite 20 números\n:");
+    for(i=0;i<20;i++){
+        scanf("%d",&N[i]);
+    }
+
+    m=N[0];
+
+    for(i=1;i<20;i++){
+        if(m > N[i]){
+            m = N[i];
+            p = i;
+        }
+    }
+    
+    printf("\nO menor valor é:%d",m);
+    printf("\nA posição é:%d",p);
+
+    return 0;
+}
