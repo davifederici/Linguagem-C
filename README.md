@@ -1392,3 +1392,27 @@ int main(){
 
                         QUADRAGÉSIMO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int i,D[20],elemento;
+
+    printf("Digite 20 números\n");
+    for(i=0;i<20;i++){
+        scanf("%d",&D[i]);
+    }
+
+    for(i=0;i<10;i++){
+       elemento = D[i];
+       D[i]= D[i+10]; 
+       D[i+10] = elemento;
+    }
+
+    printf("\nA posição é:\n");
+
+    for(i=0;i<20;i++){
+        printf("%d\t",D[i]);
+    }
+
+    return 0;
+}
