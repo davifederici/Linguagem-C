@@ -1478,3 +1478,51 @@ int main(){
 
                         QUADRAGÉSIMO TERCEIRO CÓDIGO
 
+#include <stdio.h>
+
+int main() {
+    int g[5], r[5];
+    int m, a, i, j;
+    float nota;
+
+    printf("=== Cadastro do Gabarito ===\n");
+    for (i = 0; i < 5; i++) {
+        printf("Questão %d (resposta 1 a 5): ", i + 1);
+        scanf("%d", &g[i]);
+    }
+
+    printf("\n=== Resultados dos Alunos ===\n");
+    for (i = 1; i <= 15; i++) {
+        printf("\nAluno %d:\n", i);
+
+        // Leitura da matrícula com validação
+        do {
+            printf("Digite o número de matrícula (entre 1000 e 5000): ");
+            scanf("%d", &m);
+            if (m < 1000 || m > 5000)
+                printf("Número inválido! Tente novamente.\n");
+        } while (m < 1000 || m > 5000);
+
+        // Leitura das respostas do aluno
+        printf("Digite as 5 respostas (1 a 5):\n");
+        for (j = 0; j < 5; j++) {
+            printf("Questão %d: ", j + 1);
+            scanf("%d", &r[j]);
+        }
+
+        // Cálculo de acertos
+        a = 0;
+        for (j = 0; j < 5; j++) {
+            if (r[j] == g[j])
+                a++;
+        }
+
+        // Cálculo da nota
+        nota = a * 2.0;
+
+        // Exibe resultado do aluno
+        printf("Matrícula: %d | Acertos: %d | Nota: %.1f\n", m, a, nota);
+    }
+
+    return 0;
+}
