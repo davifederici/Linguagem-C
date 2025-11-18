@@ -1532,3 +1532,34 @@ int main() {
 
                         QUADRAGÉSIMO QUARTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int g[13],r[13],i,a,n,j,soma, menor,maior;
+
+    printf("Digite o gabarito( 0,1,2)\n:");
+    for(i=0;i<13;i++){
+        scanf("%d",&g[i]);
+    }
+    
+    for(i=1;i<13;i++){
+        printf("\nDigite o número do cartão%d:0",i);
+        scanf("%d",&n);
+    }
+
+    printf("Digite as 13 respostas:\n");
+    for(j=0;j<13;j++){
+        scanf("%d",&r[j]);
+    }
+
+    a = 0;
+    for(j=0;j<13;j++){
+        if(g[j]== r[j]){
+            a++;
+        }
+    }
+
+    printf("Cartão:%d | acertos:%d",n,a);
+
+    return 0;
+}
