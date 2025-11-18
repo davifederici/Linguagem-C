@@ -1450,3 +1450,24 @@ int main(){
 
 
                         QUADRAGÉSIMO SEGUNDO CÓDIGO
+
+#include<stdio.h>
+int main(){
+
+    float v[25],x;
+    int i,p;
+
+    printf("Digite os números:");
+    for(i=0;i<25;i++){
+        scanf("%f",&v[i]);
+    }
+
+    for(i=1;i<25;i++){
+        scanf("%f",&x);
+        p = i;
+    }
+
+    printf("A posição de x é:%d",p);
+
+    return 0;
+}
