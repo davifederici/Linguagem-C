@@ -1617,3 +1617,29 @@ int main(){
 
                         QUADRAGÉSIMO SEXTO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int v[10],x[10],y[20],i;
+
+    printf("Digite os 10 primeiros valores:\n");
+    for(i=0;i<10;i++){
+        scanf("%d",&v[i]);
+    }
+
+    printf("Digite mais 10 valores:\n");
+    for(i=0;i<10;i++){
+        scanf("%d",&x[i]);
+    }
+
+    for(i=0;i<20;i++){
+        y[i] = v[i];
+        y[i + 10] = x[i];
+    }
+
+    for(i=0;i<20;i++){
+        printf("%d\n",y[i]);
+    }
+
+    return 0;
+}
