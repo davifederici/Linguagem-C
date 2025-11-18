@@ -1422,3 +1422,26 @@ int main(){
 
                         QUADRAGÉSIMO PRIMEIRO CÓDIGO
 
+#include<stdio.h>
+int main(){
+
+    int n[5],somap=0,somai=0,i;
+
+    printf("Digite 5 números:\n");
+    for(i=0;i<5;i++){
+        scanf("%d",&n[i]);
+    }
+    for(i=0;i<5;i++){
+        if(n[i]%2==1){
+            somai += n[i];
+        }
+        if(n[i]%2==0){
+            somap += n[i];
+        }
+    }
+
+    printf("\nA soma dos números pares são:%d", somap);
+    printf("\nA soma dos números ímpares são:%d", somai);
+
+    return 0;
+}
